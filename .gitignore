@@ -1,0 +1,44 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.env/
+.venv/
+env/
+venv/
+ENV/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Competition Datasets & Archives
+*.zip
+dataset/
+the-leaf-restoration-ritual.zip
+train_High_Resolution/
+train_Low_Resolution/
+test_Low_Resolution/
+
+# Model Checkpoints & Pre-trained Weights (Keep repo lightweight)
+*.pth
+*.pt
+checkpoints/
+
+# Generated Predictions & Deliverable Archives
+predictions/
+predictions_bicubic/
+
+# Massive Submissions & Intermediate CSVs (1.2M+ rows)
+*.csv
+!sample_submission.csv
+
+# OS metadata
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# IDE configs
+.vscode/
+.idea/

@@ -1,19 +1,30 @@
+# ==========================================
 # Byte-compiled / optimized / DLL files
+# ==========================================
 __pycache__/
 *.py[cod]
 *$py.class
 
+# ==========================================
 # Virtual environments
+# ==========================================
 .env/
 .venv/
 env/
 venv/
 ENV/
+env.bak/
+venv.bak/
 
-# Jupyter Notebook checkpoints
+# ==========================================
+# Jupyter Notebook checkpoints & autosaves
+# ==========================================
 .ipynb_checkpoints/
+*-checkpoint.ipynb
 
-# Competition Datasets & Archives
+# ==========================================
+# Competition Datasets & Large Archives
+# ==========================================
 *.zip
 dataset/
 the-leaf-restoration-ritual.zip
@@ -21,24 +32,39 @@ train_High_Resolution/
 train_Low_Resolution/
 test_Low_Resolution/
 
-# Model Checkpoints & Pre-trained Weights (Keep repo lightweight)
+# ==========================================
+# Model Checkpoints & Pre-trained Weights
+# ==========================================
 *.pth
 *.pt
+*.onnx
+*.safetensors
 checkpoints/
 
-# Generated Predictions & Deliverable Archives
+# ==========================================
+# Generated Predictions & Deliverables
+# ==========================================
 predictions/
-predictions_bicubic/
-
-# Massive Submissions & Intermediate CSVs (1.2M+ rows)
+predictions_*/
 *.csv
 !sample_submission.csv
 
-# OS metadata
+# ==========================================
+# Diagnostic Image Artifacts
+# ==========================================
+*.png
+*.jpg
+*.jpeg
+!assets/*.png
+!assets/*.jpg
+
+# ==========================================
+# OS & IDE Metadata
+# ==========================================
 .DS_Store
 Thumbs.db
 Desktop.ini
-
-# IDE configs
 .vscode/
 .idea/
+*.sublime-project
+*.sublime-workspace
